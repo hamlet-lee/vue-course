@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p><a @click="clickMe">Click Me</a>
+    <p><a @click="getHello">Get /api/hello</a>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -33,8 +34,13 @@
 </template>
 
 <script>
-import { t1 } from '@/test1'
-import { t2 } from '@/test2'
+// 演示 import / export
+import { t1 } from '@/lib1'
+import { t2 } from '@/lib2'
+
+// 演示 AJAX
+import axios from 'axios'
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -44,6 +50,14 @@ export default {
     clickMe () {
       t1()
       t2()
+    },
+    getHello () {
+      axios.request({
+        method: 'GET',
+        url: '/api/hello'
+      }).then(function (res) {
+        console.log(res.data)
+      })
     }
   }
 }
