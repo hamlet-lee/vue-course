@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <p><a @click="clickMe">Click Me</a>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -32,10 +33,18 @@
 </template>
 
 <script>
+import { t1 } from '@/test1'
+import { t2 } from '@/test2'
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods: {
+    clickMe () {
+      t1()
+      t2()
+    }
   }
 }
 </script>
