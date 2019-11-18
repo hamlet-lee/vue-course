@@ -1,11 +1,15 @@
 <template>
-  <div class="home">
-    欢迎使用通讯本！
+  <div>
+    <h1>管理</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'home'
+
 }
 </script>
+
+<style>
+
+</style>
