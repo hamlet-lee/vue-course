@@ -9,7 +9,6 @@
     传入一个变量：<input type="text" v-model="n"><br/>
 
     <Hello :name="n"></Hello>
-
     <br/>
 
     传入一个常量：小明<br/>

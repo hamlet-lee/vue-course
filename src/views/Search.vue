@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>查询</h1>
+    <h1>查找</h1>
   </div>
 </template>
 

@@ -19,6 +19,10 @@ export default {
   },
   methods: {
     submit () {
+      // 演示调试手段
+      // debugger // eslint-disable-line
+      // let o = {a:{b:1, c:2}, d:'hello'}
+      // console.log(o)
       axios.request({
         method: 'POST',
         url: '/api/new',

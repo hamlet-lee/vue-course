@@ -3,7 +3,7 @@
  -->
 <template>
   <div>
-    你好 <b>{{name}}</b> !
+    内部：你好 <b>{{name}}</b> !
   </div>
 </template>
 

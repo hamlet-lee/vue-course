@@ -3,7 +3,7 @@
     <div id="nav">
       <router-link to="/">首页</router-link> |
       <router-link to="/new">新增</router-link> |
-      <router-link to="/search">查询</router-link> |
+      <router-link to="/search">查找</router-link> |
       <router-link to="/manage">管理</router-link>
     </div>
     <router-view/>
