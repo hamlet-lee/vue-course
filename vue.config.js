@@ -2,6 +2,7 @@
 const BACKEND_SERVER = 'http://localhost:18080'
 
 module.exports = {
+  publicPath: '/ui/',
   devServer: {
     index: 'index.html',
     disableHostCheck: true,
