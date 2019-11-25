@@ -7,6 +7,7 @@
 <template>
   <div>
     <Address :addr="addr1"/>
+    <Address :addr="addr2"/>
   </div>
 </template>
 
@@ -22,6 +23,11 @@ export default {
         country: '中国',
         province: '广西',
         city: '桂林'
+      },
+      addr2: {
+        country: '中国',
+        province: '广西2',
+        city: '桂林3'
       }
     }
   }

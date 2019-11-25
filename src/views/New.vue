@@ -23,6 +23,8 @@ export default {
       // debugger // eslint-disable-line
       // let o = {a:{b:1, c:2}, d:'hello'}
       // console.log(o)
+
+      // Promise
       axios.request({
         method: 'POST',
         url: '/api/new',

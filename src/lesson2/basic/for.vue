@@ -25,7 +25,7 @@
 export default {
   data () {
     return {
-      list: ['第一个', '第二个', '第三个']
+      list: ['第一个', '第二个', '第三个', '4']
     }
   }
 }

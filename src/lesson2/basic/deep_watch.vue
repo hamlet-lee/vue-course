@@ -9,6 +9,8 @@
     a <input type="text" v-model="o.a"/><br/>
     b <input type="text" v-model="o.b"/><br/>
     c = a + b = <span>{{c}}</span>
+
+    <input type="button" value="替换o" @click="o = {a: '5', b: '6'} "/>
     <br/>
     这里演示：用deep watch监听o = {a, b} 变化，然后更新c
   </div>

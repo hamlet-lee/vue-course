@@ -22,6 +22,15 @@ export default {
   watch: {
     // 试试去掉这个watch项，会有什么情况发生
     'value': function (newVal, oldVal) {
+      // debugger // eslint-disable-line
+      let o = {
+        a: 1,
+        b: {
+          c: 10,
+          d: 1000
+        }
+      }
+      console.log(o) // eslint-disable-line
       this.v = newVal
     }
   }

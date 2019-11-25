@@ -18,7 +18,8 @@ export default {
   data () {
     return {
       o: {
-        a: '1'
+        a: '1',
+        c: '123'
       },
       b: '10'
     }

@@ -10,6 +10,7 @@
     b <input type="text" v-model="b"/><br/>
     c = a + b = <span>{{c}}</span>
     <br/>
+    d <input type="text" v-model="d"/>
     这里演示：用computed隐式感知a和b变化，然后更新到 'c'
   </div>
 </template>
@@ -19,7 +20,8 @@ export default {
   data () {
     return {
       a: '1',
-      b: '2'
+      b: '2',
+      d: 'a'
     }
   },
   computed: {
@@ -29,6 +31,8 @@ export default {
       // 计算结果return出去即可，外部读取 key ('c') 即可获得结果；
       // 不要在这里改变this.x的值
       // 否则容易造成逻辑混乱，形成死循环等
+      // eslint-disable-next-line no-debugger
+      // debugger
       return parseInt(this.a) + parseInt(this.b)
     }
   }
