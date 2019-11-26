@@ -11,8 +11,9 @@ module.exports = {
       '/api': {
         target: BACKEND_SERVER,
         ws: true,
-        changeOrigin: true
-      }
-    }
-  }
+        changeOrigin: true,
+      },
+    },
+    open: 'Google Chrome',
+  },
 }
