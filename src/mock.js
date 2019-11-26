@@ -20,7 +20,7 @@ if (doMock) {
     return 'hello from mock'
   })
 
-  Mock.mock(/\/api\/new/, 'post', ({ url, type, body }) => {
+  Mock.mock(/\/api\/new$/, 'post', ({ url, type, body }, res) => {
     let { name, tel } = JSON.parse(body)
     maxId++
     list.push({
