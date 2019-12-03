@@ -20,7 +20,7 @@ export default {
       default: () => (false)
     }
   },
-  data() {
+  data () {
     return {
       myParams: this.params,
       myC: '',
@@ -28,7 +28,7 @@ export default {
     }
   },
   // 首次进入本组件（通过导航，或者通过手工输入URL）
-  beforeRouteEnter(to, from, next) {
+  beforeRouteEnter (to, from, next) {
     // 不能用this, 可以 next ( vm => {  vm是组件实例 })
     // next( vm => {
     //   vm.myParams = JSON.parse(JSON.stringify(to.query))
@@ -44,7 +44,7 @@ export default {
   // 如果是点击了RUN，可以带上noReload = true
   // 这样就不用刷新参数
 
-  beforeRouteUpdate(to, from, next) {
+  beforeRouteUpdate (to, from, next) {
     console.log('calling: before route update')
     if (to.params.noReload) {
       // 用户点击RUN，走这个分支
@@ -59,7 +59,7 @@ export default {
     }
   },
   methods: {
-    reload() {
+    reload () {
       const query = this.$route.query
       this.myParams = JSON.parse(JSON.stringify(query))
       // 结果置空
@@ -69,7 +69,7 @@ export default {
         this.doRun()
       }
     },
-    doRun() {
+    doRun () {
       this.$router.push({
         name: 'adder',
         query: this.myParams,
