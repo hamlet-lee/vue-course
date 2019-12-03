@@ -4,7 +4,9 @@
 
     姓名<input v-model="name"/><br/>
     电话<input v-model="tel"/><br/>
-    <input type="button" value="提交" @click="submit"/>
+    <!-- 换用iview 控件 -->
+    <!-- <input type="button" value="提交" @click="submit"/> -->
+    <Button @click="submit">提交</Button>
   </div>
 </template>
 
@@ -35,11 +37,27 @@ export default {
         })
       }).then((res) => {
         // 200
-        alert('新增成功!')
-        this.name = ''
-        this.tel = ''
+        // 换用iview组件
+        // alert('新增成功!')
+        this.$Modal.success({
+          title: '消息',
+          content: '新增成功!',
+          onOk: () => {
+            this.name = ''
+            this.tel = ''
+          }
+        })
       }).catch((err) => {
-        alert('失败：' + err)
+        // 换用iview组件
+        // alert('失败：' + err)
+        this.$Modal.error({
+          title: '消息',
+          content: '失败：' + err,
+          onOk: () => {
+            this.name = ''
+            this.tel = ''
+          }
+        })
       })
     }
   }
