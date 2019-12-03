@@ -31,9 +31,13 @@
                         <Icon type="ios-settings"></Icon>
                         <span>管理</span>
                     </MenuItem>
-                     <MenuItem name="1-5">
+                    <MenuItem name="1-5">
                         <Icon type="ios-settings"></Icon>
                         <span>图表展示</span>
+                    </MenuItem>
+                    <MenuItem name="1-6">
+                        <Icon type="ios-settings"></Icon>
+                        <span>计算器</span>
                     </MenuItem>
                 </Menu>
             </Sider>
@@ -81,7 +85,8 @@ export default {
         '1-2': '/new',
         '1-3': '/search',
         '1-4': '/manage',
-        '1-5': '/chart'
+        '1-5': '/chart',
+        '1-6': '/adder'
       }
       console.log(itemName)
       // https://router.vuejs.org/zh/guide/essentials/navigation.html
@@ -98,7 +103,8 @@ export default {
           'new': '1-2',
           'search': '1-3',
           'manage': '1-4',
-          'chart': '1-5'
+          'chart': '1-5',
+          'adder': '1-6'
         }
         this.activeName = pathToNameMap[newVal]
         console.log(newVal)
