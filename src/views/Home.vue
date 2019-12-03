@@ -1,11 +1,15 @@
 <template>
   <div class="home">
-    欢迎使用通讯本！
+    你好{{ name }}, 欢迎使用通讯本！
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  name: 'home'
+  name: 'home',
+  computed: {
+    ...mapState(['name'])
+  }
 }
 </script>
