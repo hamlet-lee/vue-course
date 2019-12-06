@@ -32,4 +32,10 @@ if (doMock) {
     // 可以在console看到当前list情况
     console.log(list)
   })
+
+  Mock.mock(/\/api\/userinfo/, 'get', ({ url, type, body }) => {
+    return {
+      name: 'lisn'
+    }
+  })
 }
