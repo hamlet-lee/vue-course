@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Button @click="changeParams">change params</Button>
     <Input v-model="myParams.a" />
     +
     <Input v-model="myParams.b" />
@@ -68,6 +69,15 @@ export default {
       if (this.autoRun) {
         this.doRun()
       }
+    },
+    changeParams () {
+      this.$router.push({
+        name: 'adder',
+        query: {
+          a: '15',
+          b: '25'
+        }
+      })
     },
     doRun () {
       this.$router.push({

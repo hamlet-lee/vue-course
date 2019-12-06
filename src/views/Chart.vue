@@ -1,11 +1,12 @@
 <template>
   <div>
     <Button @click="changeData">改变数据</Button>
-    <v-chart :options="line"/>
+    <ECharts :options="line"/>
   </div>
 </template>
 
 <script>
+// cnpm install echarts vue-echarts --save
 import ECharts from 'vue-echarts'
 // 也可以按需引用，参考
 // https://www.echartsjs.com/zh/tutorial.html#%E5%9C%A8%20webpack%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20ECharts
@@ -17,7 +18,7 @@ import 'echarts'
 
 export default {
   components: {
-    'v-chart': ECharts
+    ECharts
   },
   data () {
     return {

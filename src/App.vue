@@ -14,6 +14,7 @@
         <Layout>
             <Sider ref="side1" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed">
                 <!-- https://www.iviewui.com/components/menu -->
+                <!-- <Menu theme="dark" width="auto" :class="menuitemClasses" @on-select="onSelect"> -->
                 <Menu :active-name="activeName" theme="dark" width="auto" :class="menuitemClasses" @on-select="onSelect">
                     <MenuItem name="1-1">
                         <Icon type="ios-navigate"></Icon>
