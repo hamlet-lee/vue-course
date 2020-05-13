@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Rules</h1>
+    <h1>规则管理</h1>
     <Table border :columns="cols" :data="rules">
       <template slot-scope="{ row, index }" slot="commentPattern">
         <Input type="text" v-model="editCommentPattern" v-if="editIndex === index" />

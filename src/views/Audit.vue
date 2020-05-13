@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Audit</h1>
+    <h1>审计</h1>
         <Table border :columns="cols" :data="auditList">
       <template slot-scope="{ row }" slot="id">
         <Input type="text" v-model="row.id"/>

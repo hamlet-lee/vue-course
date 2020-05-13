@@ -42,11 +42,11 @@
                     </MenuItem-->
                     <MenuItem name="1-7">
                         <Icon type="ios-settings"></Icon>
-                        <span>Rules</span>
+                        <span>规则管理</span>
                     </MenuItem>
                     <MenuItem name="1-8">
                         <Icon type="ios-settings"></Icon>
-                        <span>Audit</span>
+                        <span>审计</span>
                     </MenuItem>
                 </Menu>
             </Sider>
