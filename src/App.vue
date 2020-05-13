@@ -40,6 +40,14 @@
                         <Icon type="ios-settings"></Icon>
                         <span>计算器</span>
                     </MenuItem>
+                    <MenuItem name="1-7">
+                        <Icon type="ios-settings"></Icon>
+                        <span>Rules</span>
+                    </MenuItem>
+                    <MenuItem name="1-8">
+                        <Icon type="ios-settings"></Icon>
+                        <span>Audit</span>
+                    </MenuItem>
                 </Menu>
             </Sider>
             <Layout>
@@ -87,7 +95,9 @@ export default {
         '1-3': '/search',
         '1-4': '/manage',
         '1-5': '/chart',
-        '1-6': '/adder'
+        '1-6': '/adder',
+        '1-7': '/rules',
+        '1-8': '/audit'
       }
       console.log(itemName)
       // https://router.vuejs.org/zh/guide/essentials/navigation.html

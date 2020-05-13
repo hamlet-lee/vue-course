@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Manage from '@/views/Manage.vue'
+import Rules from '@/views/Rules.vue'
+import Audit from '@/views/Audit.vue'
 import New from '@/views/New.vue'
 import Search from '@/views/Search.vue'
 import Chart from '@/views/Chart.vue'
@@ -13,6 +15,16 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home
+  },
+  {
+    path: '/rules',
+    name: 'rules',
+    component: Rules
+  },
+  {
+    path: '/audit',
+    name: 'audit',
+    component: Audit
   },
   {
     path: '/new',
