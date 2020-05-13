@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    你好{{ name }}, 欢迎使用通讯本！
+    您好！欢迎使用 Presto Gateway Rules 编辑器
   </div>
 </template>
 

@@ -101,8 +101,6 @@ if (doMock) {
   })
 
   Mock.mock(/\/api\/rules\/delete$/, 'post', ({ url, type, body }, res) => {
-    // eslint-disable-next-line no-debugger
-    debugger
     let { id } = JSON.parse(body)
     let pos = indexMap[id]
     list.splice(pos, 1)
@@ -111,6 +109,21 @@ if (doMock) {
     return {}
   })
 
+  Mock.mock(/\/api\/audit\/last$/, 'get', ({ url, type, body }, res) => {
+    return [
+      {
+        id: 0,
+        queryText: '--comment 1\nselect 1',
+        comment: '--comment 1\n',
+        sql: 'select 1',
+        user: 'lisn',
+        source: 'source',
+        queryId: 'queryaoeaoeuoe',
+        backendUrl: 'http://a.com:80',
+        matchedRuleId: 1
+      }
+    ]
+  })
   Mock.mock(/\/api\/userinfo/, 'get', ({ url, type, body }) => {
     return {
       name: 'lisn'

@@ -16,7 +16,7 @@
                 <!-- https://www.iviewui.com/components/menu -->
                 <!-- <Menu theme="dark" width="auto" :class="menuitemClasses" @on-select="onSelect"> -->
                 <Menu :active-name="activeName" theme="dark" width="auto" :class="menuitemClasses" @on-select="onSelect">
-                    <MenuItem name="1-1">
+                    <!--MenuItem name="1-1">
                         <Icon type="ios-navigate"></Icon>
                         <span>首页</span>
                     </MenuItem>
@@ -39,7 +39,7 @@
                     <MenuItem name="1-6">
                         <Icon type="ios-settings"></Icon>
                         <span>计算器</span>
-                    </MenuItem>
+                    </MenuItem-->
                     <MenuItem name="1-7">
                         <Icon type="ios-settings"></Icon>
                         <span>Rules</span>

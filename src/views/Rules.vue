@@ -35,6 +35,12 @@
         <div v-else>
           <Button @click="handleEdit(row, index)">编辑</Button>
           <Button @click="handleDelete(row, index)">删除</Button>
+        </div>
+      </template>
+      <template slot-scope="{ row, index }" slot="ord">
+        <div v-if="editIndex === index">
+        </div>
+        <div v-else>
           <Button @click="handleMove(row, index, 'move-up')">上移</Button>
           <Button @click="handleMove(row, index, 'move-down')">下移</Button>
           <Button @click="handleMove(row, index, 'move-top')">置顶</Button>
@@ -44,7 +50,7 @@
     </Table>
     <Button @click="handleNew()"> 新增 </Button>
     <div>
-    {{rules}}
+    <!-- {{rules}} -->
     </div>
   </div>
 </template>
@@ -60,28 +66,32 @@ export default {
           key: 'id'
         },
         {
-          title: 'commentPattern',
+          title: 'Comment Pattern',
           slot: 'commentPattern'
         },
         {
-          title: 'sqlPattern',
+          title: 'SQL Pattern',
           slot: 'sqlPattern'
         },
         {
-          title: 'userPattern',
+          title: 'User Pattern',
           slot: 'userPattern'
         },
         {
-          title: 'sourcePattern',
+          title: 'Source Pattern',
           slot: 'sourcePattern'
         },
         {
-          title: 'sandboxTag',
+          title: 'Sandbox Tag',
           slot: 'sandboxTag'
         },
         {
           title: '操作',
           slot: 'action'
+        },
+        {
+          title: '顺序',
+          slot: 'ord'
         }
       ],
       rules: [],
