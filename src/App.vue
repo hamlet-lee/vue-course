@@ -16,11 +16,11 @@
                 <!-- https://www.iviewui.com/components/menu -->
                 <!-- <Menu theme="dark" width="auto" :class="menuitemClasses" @on-select="onSelect"> -->
                 <Menu :active-name="activeName" theme="dark" width="auto" :class="menuitemClasses" @on-select="onSelect">
-                    <!--MenuItem name="1-1">
+                    <MenuItem name="1-1">
                         <Icon type="ios-navigate"></Icon>
                         <span>首页</span>
                     </MenuItem>
-                    <MenuItem name="1-2">
+                    <!--MenuItem name="1-2">
                         <Icon type="ios-search"></Icon>
                         <span>新增</span>
                     </MenuItem>
